@@ -46,8 +46,8 @@
 
 // add type script on header (my name)
 const roles = [
-  { text: "Web Developer", class: "blue" },
-  { text: "Data Analyst", class: "green" }
+  { text: "Web Developer", class: "red" },
+  { text: "Data Analyst", class: "blue" }
 ];
 
 const el = document.getElementById("name_title");
