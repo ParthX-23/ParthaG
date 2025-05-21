@@ -147,6 +147,21 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 /* ---------------------------------------------- */
 /* style for typescript title */
 
+#name_title {
+
+  display: inline-block;
+  border-right: 2px solid white; /* blinking cursor */
+  padding-right: 5px;
+  animation: blinkCursor 0.7s steps(1) infinite;
+}
+
+h1 div {
+  display: block;
+}
+
+@keyframes blinkCursor {
+  50% { border-color: transparent; }
+}
 .red{ color: 	#FF4500; }
 .blue{ color: 		#00BFFF; }
 /* -------------------------------------------------- */
