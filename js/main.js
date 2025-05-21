@@ -45,17 +45,21 @@
     };
 
 // add type script on header (my name)
-const roles = ["Web Developer", "Data Analyst"];
+const roles = [
+  { text: "Web Developer", class: "blue" },
+  { text: "Data Analyst", class: "green" }
+];
+
 const el = document.getElementById("name_title");
 let i = 0, j = 0, deleting = false;
 
 function type() {
-  const word = roles[i];
-  el.textContent = word.slice(0, j);
+  const role = roles[i];
+  el.innerHTML = `<span class="${role.class}">${role.text.slice(0, j)}</span>`;
 
   if (!deleting) {
     j++;
-    if (j > word.length) {
+    if (j > role.text.length) {
       deleting = true;
       setTimeout(type, 1000);
       return;
@@ -67,10 +71,12 @@ function type() {
       i = (i + 1) % roles.length;
     }
   }
+
   setTimeout(type, deleting ? 50 : 100);
 }
 
 type();
+
 // --------------------------------------------------------
 
    /* pretty print

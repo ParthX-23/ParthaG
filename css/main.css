@@ -144,6 +144,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-variant-ligatures: common-ligatures;
   text-rendering: optimizeLegibility;
 }
+/* style for typescript title */
+#name_title{
+   font-size: 24px;
+      font-weight: bold;
+    }
+.blue { color: #007acc; }
+.green { color: #28a745; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   margin-top: 6rem;
