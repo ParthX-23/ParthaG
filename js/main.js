@@ -44,7 +44,34 @@
         });
     };
 
+// add type script on header (my name)
+const roles = ["Web Developer", "Data Analyst"];
+const el = document.getElementById("name_title");
+let i = 0, j = 0, deleting = false;
 
+function type() {
+  const word = roles[i];
+  el.textContent = word.slice(0, j);
+
+  if (!deleting) {
+    j++;
+    if (j > word.length) {
+      deleting = true;
+      setTimeout(type, 1000);
+      return;
+    }
+  } else {
+    j--;
+    if (j === 0) {
+      deleting = false;
+      i = (i + 1) % roles.length;
+    }
+  }
+  setTimeout(type, deleting ? 50 : 100);
+}
+
+type();
+// --------------------------------------------------------
 
    /* pretty print
     * -------------------------------------------------- */
