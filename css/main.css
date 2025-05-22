@@ -1717,8 +1717,8 @@ input::-moz-focus-inner {
 }
 
 .header-logo img {
-  width: 41px;
-  height: 44px;
+  width: 58px;
+  height: auto;
   vertical-align: bottom;
 }
 
@@ -1902,8 +1902,8 @@ input::-moz-focus-inner {
   }
 
   .header-logo img {
-    width: 37px;
-    height: 40px;
+    width: 39px;
+    height: 42px;
   }
 
   .header-content {
@@ -2003,6 +2003,7 @@ input::-moz-focus-inner {
   .header-logo {
     left: 4rem;
   }
+  
 
   .header-menu-toggle {
     right: 3.2rem;
